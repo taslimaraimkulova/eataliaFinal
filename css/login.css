@@ -211,6 +211,7 @@ i:active {
 }
 
 .show__checkbox {
+	display: block;
 	width: 18px;
 	height: 18px;
 	margin: 0 0 0 10px;
