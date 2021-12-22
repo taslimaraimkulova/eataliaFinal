@@ -34,9 +34,9 @@ li {
     font-size: 30px;
     color:white;
 }
-input[type=checkbox]{
+/* input[type=checkbox]{
  display: none;
-} 
+}  */
 .hamburger {
  display: none;
  font-size: 24px;
