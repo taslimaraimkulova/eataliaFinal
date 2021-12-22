@@ -197,8 +197,9 @@ footer{
     .second {
     animation-play-state: paused;
     display: grid;
-    grid: auto-flow;
-    justify-content: space-between;
+    animation-play-state: paused;
+    flex-direction: column;
+  }
   }
 }
 @media (max-width: 1120px) {
