@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Location</title>
+
+    <link rel="stylesheet" href="../css/map.css">
+
+    <script src="https://kit.fontawesome.com/51c82fa37e.js" crossorigin="anonymous"></script>
+
+    <style>
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section class="first">
+        <nav class="head">
+            <div class="logo">Eatalia</div>
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="main.html">home</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="registration.html" id="register">signup</a></li>
+                <li><a href="login.html" id="login">login</a></li>
+            </div>
+            <div class="card">
+                <p id="user"></p>
+                <a href="#" class="person"><i class="fas fa-user" alt="personicon"></i></a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart" alt="carticon"></i></a>
+                <a href="menu.html" class="order">Order Online</a>
+            </div>
+        </nav>     
+    </section> 
+
+    <section class="second">
+        <div class="title">
+            ADDRESSES in ALMATY:
+        </div>
+
+        <div class="map">
+            <div class="location">
+                <div>
+                    1. <span style="color: red;"> NEW.</span> mk-r 10, 57 Zhandosova str., Beregovoy ug.
+                    Table reserve: <br>+7 702 000 33 35;
+                    <div> 2. mk-r Almagul 18a, Zharokova str., ug. Dunaevsky  
+                    Table reserve: <br>8 (727) 396-24-70;
+                    </div>
+
+                    <div>3. Dostyk ave. 91/1, Zholdasbekov ug.   
+                    Table reserve: <br>8 (727) 354-70-14; 8778-775-45-00 
+                    </div>
+
+                    <div>4. Sholokhov str., Richard Sorge
+                    Table reserve: <br>+7 (778) 109 89 23
+                    </div>
+
+                    <div>5. Momyshuly str., Chaliapin county. Sputnik Shopping Center, 3rd floor</div>
+                </div>
+            </div>
+
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <h1>Contact us</h1>
+            <a href="map.html"><i class="fas fa-map-marker-alt" alt="map">Address</i> </a>
+            <a href="map.html"><i class="fas fa-phone-alt" alt="phone"> +7 (778) 109 89 23</i></a>
+            <a href="https://mail.ru/"><i class="fas fa-envelope" alt="mail"> eatalia@email.com</i></a>
+        </div>
+
+        <div class="about">
+            <h1>Eatalia</h1>
+            <h2>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+            </h2>
+
+            <div class="soc">
+                    <a href="https://ru-ru.facebook.com/"><i class="fab fa-facebook" alt="facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram" alt="instagram"></i></a>
+                    <a href="https://twitter.com/?lang=ru"><i class="fab fa-twitter" alt="twitter"></i></a>
+                    <a href="https://vk.com/"><i class="fab fa-vk" alt="vk"></i></a>
+                    <a href="https://www.pinterest.ru/"><i class="fab fa-pinterest" alt="pinterest"></i></a>
+            </div>
+        </div>
+
+        <div class="about">
+            <h1>Opening hours</h>
+            <h2><a href="map.html"> Everyday</a></h2>
+            <h2><a href="map.html">9AM - 10PM</a></h2>
+        </div>
+    </footer>
+
+    <script src="../js/map.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmb9OLGF2k5YVAUMiErwUy1hRS6CXJCho&callback=initMap&libraries=&v=weekly" async></script>
+</body>
+</html>

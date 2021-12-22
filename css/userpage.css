@@ -1,0 +1,205 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Monaco, monospace;
+	box-sizing: border-box;
+}
+li {
+ list-style: none;
+}
+.head{
+    height: 90px;
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    flex-flow: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    color: white;
+}
+.head a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+    color:white;
+}
+input[type=checkbox]{
+ display: none;
+} 
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 17px;
+ text-transform: uppercase;
+}
+.menu li:hover {
+ background-image: url(../img/back.jpeg);
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li{
+ padding: 5px 14px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
+a:active {
+  color: orange;
+  text-decoration: none;
+}
+i:link {
+  text-decoration: none;
+}
+i:visited {
+  color: white;
+  text-decoration: none;
+}
+i:hover {
+  color: orange;
+  text-decoration: none;
+}
+i:active {
+  color: orange;
+  text-decoration: none;
+}
+.card{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+.order{
+    background-color: rgb(255, 208, 0);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+@keyframes anime{
+    from {background-color: rgb(255, 208, 0);}
+    to {background-color: #808080;}
+}
+.order:hover {
+    animation-name: anime;
+    background-color: #808080;
+    animation-duration: 1s;
+    color: white; 
+}
+@media (max-width: 1120px) {
+  .menu{
+    width: 450px;
+    font-size: 14px;
+}
+    .card{
+        width: 30%;
+    }
+}
+@media (max-width: 960px){
+  .menu {
+    display:none;
+    background-image: url(../img/back.jpeg);
+    right: 0;
+    left: 0;
+    position: fixed;
+    top: 90px;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .card{
+    display: none;
+  }
+  .menu li:hover{
+    display: inline-block;
+    background-image: url(../img/back.jpeg);
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+   display: block;
+   text-align: center;
+  }
+  .hamburger {
+   display: block;
+  }
+}
+#user {
+	display: none;
+}
+.main {
+	margin-left: 15%;
+}
+
+.section__header, .b-orders__header {
+	font-size: 32px;
+}
+
+.section__button {
+  	border: none;
+  	color: white;
+  	padding: 14px 30px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 6px 0 20px 12%;
+  	transition-duration: 0.4s;
+  	cursor: pointer;
+  	overflow: hidden;
+  	font-family: Monaco, monospace;
+  	background-color: #555555;
+  	border: 2px solid #555555;
+}
+
+.section__button:hover {
+	background-color: #fff;
+	color: #555555;
+}
+
+.cancel {
+	background-color: #ff3300;
+	border: 2px solid #ff3300;
+}
+
+.cancel:hover {
+	color: #ff3300;
+}
+
+.logout {
+	margin: 6px 0 20px 20px;
+}
+
+.b-fname__text, .b-lname__text, .b-email__text, .b-password__text, .prodname__text, .prodprice__text {
+	width: 30%;
+	display: inline-block;
+}
+
+.b-fname__text p, .b-lname__text p, .b-email__text p, .b-password__text p, .prodname__text p, .prodprice__text p {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.b-fname__textblock, .b-lname__textblock, .b-email__textblock, .b-password__textblock, .prodname__textblock, .prodprice__textblock {
+	width: 60%;
+	display: inline-block;
+}
+
+.b-fname__textblock p, .b-lname__textblock p, .b-email__textblock p, .b-password__textblock p, .prodname__textblock p, .prodprice__textblock p {
+	display: inline-block;
+}

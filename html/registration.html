@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../css/registration.css">
+
+	<script src="https://kit.fontawesome.com/42b8e79ae1.js" crossorigin="anonymous"></script>
+
+	<title>Register your account</title>
+</head>
+<body>
+	<section class="first">
+        <nav class="head">
+            <div class="logo">Eatalia</div>
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="main.html">home</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="registration.html" id="register">signup</a></li>
+                <li><a href="login.html" id="login">login</a></li>
+            </div>
+            <div class="card">
+                <p id="user"></p>
+                <a href="#" class="person"><i class="fas fa-user" alt="personicon"></i></a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart" alt="carticon"></i></a>
+                <a href="menu.html" class="order">Order Online</a>
+            </div>
+        </nav>   
+    </section> 
+
+	<main class="main">
+		<section class="section">
+			<form class="form">
+				<div class="b-register">
+					<p class="b-register__text">
+						<span class="b-register__text_register">Register</span>
+						<span class="b-register__text_sign-in">Have an account? <a href="login.html">Sign in</a></span>
+					</p>
+				</div>
+
+				<div class="b-fname">
+					<label class="b-fname__text">Fisrt Name</label><br>
+					<input type="text" name="fname" class="b-fname__input">	
+				</div>
+
+				<div class="b-lname">
+					<label class="b-lname__text">Last Name</label><br>
+					<input type="text" name="lname" class="b-lname__input">	
+				</div>
+
+				<div class="b-email">
+					<label class="b-email__text">Email address</label><br>
+					<input type="text" name="email" class="b-email__input">	
+				</div>
+
+				<div class="b-password">
+					<div class="password">
+						<label class="password__text">Password</label><br>
+						<input type="password" name="password" id="password" class="password__input">
+					</div>
+					
+					<div class="show">
+						<input type="checkbox" name="show" onclick="showPass()" class="show__checkbox">
+						<label for="show" class="show__text">Show</label>
+					</div>
+				</div>
+
+				<div class="b-submit">
+					<input type="submit" name="submit" value="Register" class="b-submit__button">
+				</div>
+			</form>
+		</section>
+	</main>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../js/registration.js"></script>
+</body>

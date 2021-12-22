@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-weight: 600;
+}
+li {
+ list-style: none;
+}
+.first{
+    height: 90px;
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+}
+.head{
+    flex-flow: wrap;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+.head a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+    color:white;
+}
+input[type=checkbox]{
+ display: none;
+} 
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 17px;
+ text-transform: uppercase;
+}
+.menu li:hover {
+ background-image: url(../img/back.jpeg);
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li{
+ padding: 5px 14px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
+a:active {
+  color: orange;
+  text-decoration: none;
+}
+i:link {
+  text-decoration: none;
+}
+i:visited {
+  color: white;
+  text-decoration: none;
+}
+i:hover {
+  color: orange;
+  text-decoration: none;
+}
+i:active {
+  color: orange;
+  text-decoration: none;
+}
+.card{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+.order{
+    background-color: rgb(255, 208, 0);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+@keyframes anime{
+    from {background-color: rgb(255, 208, 0);}
+    to {background-color: #808080;}
+}
+.order:hover {
+    animation-name: anime;
+    background-color: #808080;
+    animation-duration: 1s;
+    color: white; 
+}
+@media (max-width: 1120px) {
+  .menu{
+    width: 450px;
+    font-size: 14px;
+}
+    .card{
+        width: 30%;
+    }
+}
+@media (max-width: 960px){
+  .menu {
+    display:none;
+    background-image: url(../img/back.jpeg);
+    right: 0;
+    left: 0;
+    position: fixed;
+    top: 90px;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .card{
+    display: none;
+  }
+  .menu li:hover{
+    display: inline-block;
+    background-image: url(../img/back.jpeg);
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+   display: block;
+   text-align: center;
+  }
+  .hamburger {
+   display: block;
+  }
+}
+#user {
+	display: none;
+}
+
+
+.section {
+	margin-top: 30px;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 40%;
+}
+
+.form {
+	border: 3px solid #e65c00;
+	background-color: #ff9800;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 18px;
+	border-radius: 8px;
+}
+
+.b-register__text {
+	border-bottom: 2px solid #e65c00;
+}
+
+.b-register__text_register {
+	padding-left: 24px;
+	font-size: 32px;
+}
+
+.b-register__text_sign-in {
+	margin-left: 28%; /*need to change*/
+	padding-right: 24px;
+	font-size: 18px;
+}
+
+.b-register__text_sign-in a {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.b-register__text_sign-in a:hover {
+	color: #ff3300;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.b-fname {
+	display: inline-block;
+	width: 45%;
+	padding: 5px 0 10px 24px;
+}
+
+.b-lname {
+	display: inline-block;
+	width: 45%;
+	float: right;
+	padding: 5px 0 10px 0;
+}
+
+.b-email {
+	padding: 10px 0 10px 24px;
+}
+
+.b-password {
+	padding: 10px 0 10px 24px;
+}
+
+.password, .show {
+	display: inline-block;
+}
+
+.password {
+	width: 80%;
+}
+
+.show {
+	position: relative;
+	width: 16%;
+	float: right;
+	margin-top: 10%;  /*need to change*/
+}
+
+.show__checkbox {
+	width: 18px;
+	height: 18px;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.show__text {  /*need to change*/
+	position: absolute;
+	margin-left: 4px;
+	bottom: 3px;
+}
+
+.b-fname__input, .b-lname__input, .b-email__input {
+	width: 80%;
+}
+
+.password__input {
+	width: 100%;
+}
+
+.b-fname__input, .b-lname__input, .b-email__input, .password__input {
+	padding: 8px 10px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	font-weight: 600;
+	background-color: #e6e6e6;
+}
+
+.b-submit {
+	padding: 10px 0 20px 0;
+	text-align: center;
+}
+
+.b-submit__button {
+	text-align: center;
+	padding: 12px 14px;
+	font-size: 1rem;
+	background-color: #e6e6e6;
+	color: #ff3300;
+	font-weight: 700;
+	width: 70%;
+	margin: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #ff3300;
+}
+
+.b-submit__button:hover {
+	background-color: #ff3300;
+	color: #fff;
+}

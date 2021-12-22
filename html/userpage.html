@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../css/userpage.css">
+	<title>User Page</title>
+</head>
+<body>
+	<nav class="head">
+        <div class="logo">Eatalia</div>
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+                <li><a href="main.html">home</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="registration.html" id="register">signup</a></li>
+                <li><a href="login.html" id="login">login</a></li>
+            </div>
+            <div class="card">
+                <p id="user"></p>
+                <a href="#" class="person"><i class="fas fa-user" alt="personicon"></i></a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart" alt="carticon"></i></a>
+                <a href="menu.html" class="order">Order Online</a>
+            </div>
+        </nav>   
+
+	<main class="main">
+		<section class="section">
+			<h1 class="section__header">My Profile</h1>
+			<div class="b-fname">
+				<div class="b-fname__text"><p>First Name</p></div>
+				<div class="b-fname__textblock"><p id="fname">1</p></div>
+			</div>
+
+			<div class="b-lname">
+				<div class="b-lname__text"><p>Last Name</p></div>
+				<div class="b-lname__textblock"><p id="lname">1</p></div>
+			</div>
+
+			<div class="b-email">
+				<div class="b-email__text"><p>Email</p></div>
+				<div class="b-email__textblock"><p id="email">1</p></div>
+			</div>
+
+			<div class="b-password">
+				<div class="b-password__text"><p>Password</p></div>
+				<div class="b-password__textblock"><p id="password">1</p></div>
+			</div>
+
+			<div class="b-orders">
+				<h1 class="b-orders__header">My orders</h1>
+				<div class="prodname">
+					<div class="prodname__text"><p>Product Name</p></div>
+					<div class="prodname__textblock"><p id="prodname">Empty</p></div>
+				</div>
+
+				<div class="prodprice">
+					<div class="prodprice__text"><p>Product Price</p></div>
+					<div class="prodprice__textblock"><p id="prodprice">Empty</p></div>
+				</div>
+			</div>
+
+			<button class="section__button cancel" onclick="cancel()">Cancel your order</button>
+			<button class="section__button logout" onclick="logout()">Logout</button>
+		</section>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://kit.fontawesome.com/51c82fa37e.js" crossorigin="anonymous"></script>
+	<script src="../js/userpage.js"></script>
+</body>
+</html>

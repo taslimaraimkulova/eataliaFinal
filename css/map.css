@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+li {
+ list-style: none;
+}
+.first{
+    height: 90px;
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+}
+.head{
+    flex-flow: wrap;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+.head a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+    color:white;
+}
+input[type=checkbox]{
+ display: none;
+} 
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 17px;
+ text-transform: uppercase;
+}
+.menu li:hover {
+ background-image: url(../img/back.jpeg);
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li{
+ padding: 5px 14px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
+a:active {
+  color: orange;
+  text-decoration: none;
+}
+i:link {
+  text-decoration: none;
+}
+i:visited {
+  color: white;
+  text-decoration: none;
+}
+i:hover {
+  color: orange;
+  text-decoration: none;
+}
+i:active {
+  color: orange;
+  text-decoration: none;
+}
+.card{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+.order{
+    background-color: rgb(255, 208, 0);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+@keyframes anime{
+    from {background-color: rgb(255, 208, 0);}
+    to {background-color: #808080;}
+}
+.order:hover {
+    animation-name: anime;
+    background-color: #808080;
+    animation-duration: 1s;
+    color: white; 
+}
+@media (max-width: 1120px) {
+  .menu{
+    width: 450px;
+    font-size: 14px;
+}
+    .card{
+        width: 30%;
+    }
+}
+@media (max-width: 960px){
+  .menu {
+    display:none;
+    background-image: url(../img/back.jpeg);
+    right: 0;
+    left: 0;
+    position: fixed;
+    top: 90px;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .card{
+    display: none;
+  }
+  .menu li:hover{
+    display: inline-block;
+    background-image: url(../img/back.jpeg);
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .menu{
+   display: block;
+   text-align: center;
+  }
+  .hamburger {
+   display: block;
+  }
+}
+.second{
+    height: 90vh;
+    margin: 100px 10% 0 10%;
+}
+.title{
+    font-size: 30px;
+    color: rgb(49, 49, 49);
+    margin: 50px;
+}
+.map{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    height: 500px;
+}
+
+
+.location{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5,fr);
+    row-gap: 10px;
+}
+.location div{
+    color: rgb(49, 49, 49) !important;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer{
+    display: grid;
+    padding: 0 10%;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 50vh;
+    background-color: rgb(49, 49, 49);
+    align-items: center;
+}
+
+.about{
+    display: grid;
+    row-gap: 10px;
+    height: 60%;
+    text-align: center;
+}
+.about img{
+    width: 35px;
+}
+.about img:hover{
+    width: 25px;
+}
+.about a{
+    font-size: 25px;
+}
+.contact{
+    display: grid;
+    row-gap: 10px;
+    height: 60%;
+    text-align: center;
+}
+.contact img{
+    width: 20px;
+}
+.contact a{
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+#user {
+    display: none;
+}
