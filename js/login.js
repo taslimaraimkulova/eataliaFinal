@@ -124,6 +124,10 @@ $(".form").on("submit", function(event) {
     		localStorage.setItem("active", JSON.stringify(admin));
     		window.location.href = "admin.html";
     	}
+	else if (!userData.some((user)=>{return user.email == email})) {
+    		alert("This user does not exist");
+    		return;
+    	}
     	else if (blockedUserData.some((user)=>{return user.email == email})) {
     		alert("This user is disabled. You cannot log in");
     		return;
